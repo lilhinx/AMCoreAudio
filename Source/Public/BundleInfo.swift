@@ -5,7 +5,7 @@
 //  Created by Ruben Nine on 29/04/16.
 //  Copyright © 2016 9Labs. All rights reserved.
 //
-
+#if os(macOS)
 import Foundation
 
 /// This class provides information about this bundle such as:
@@ -40,3 +40,4 @@ public final class BundleInfo {
         return "\(name) \(version) (build \(buildNumber)) built on \(buildDate)."
     }
 }
+#endif

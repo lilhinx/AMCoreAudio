@@ -5,7 +5,7 @@
 //  Created by Ruben Nine on 20/09/2019.
 //  Copyright © 2019 9Labs. All rights reserved.
 //
-
+#if os(macOS)
 import Foundation
 
 /// Represents an `AudioDevice` event.
@@ -55,3 +55,4 @@ public enum AudioDeviceEvent: Event {
     /// Called whenever the audio device's *hog mode* property changes.
     case hogModeDidChange(audioDevice: AudioDevice)
 }
+#endif

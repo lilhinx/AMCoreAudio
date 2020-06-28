@@ -5,7 +5,7 @@
 //  Created by Ruben Nine on 20/09/2019.
 //  Copyright © 2019 9Labs. All rights reserved.
 //
-
+#if os(macOS)
 import Foundation
 
 /// Indicates the terminal type used by an `AudioStream`.
@@ -51,3 +51,4 @@ public enum TerminalType: String {
     /// A stream from/to an DisplayPort port
     case displayPort
 }
+#endif

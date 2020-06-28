@@ -6,6 +6,7 @@
 //  Copyright © 2016 9Labs. All rights reserved.
 //
 
+#if os(macOS)
 import Foundation
 
 // MARK: - NotificationCenter
@@ -92,3 +93,4 @@ public final class NotificationCenter {
         }
     }
 }
+#endif

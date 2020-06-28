@@ -5,7 +5,7 @@
 //  Created by Ruben Nine on 20/09/2019.
 //  Copyright © 2019 9Labs. All rights reserved.
 //
-
+#if os(macOS)
 import Foundation
 
 /// The protocol any event subscriber must implement.
@@ -23,3 +23,4 @@ public protocol EventSubscriber {
 func == (lhs: EventSubscriber, rhs: EventSubscriber) -> Bool {
     return lhs.hashValue == rhs.hashValue
 }
+#endif

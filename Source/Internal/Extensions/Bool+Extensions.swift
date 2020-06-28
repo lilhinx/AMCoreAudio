@@ -6,6 +6,7 @@
 //  Copyright © 2015 9Labs. All rights reserved.
 //
 
+#if os(macOS)
 import Foundation
 
 extension Bool {
@@ -13,3 +14,4 @@ extension Bool {
         self.init(integer != 0)
     }
 }
+#endif

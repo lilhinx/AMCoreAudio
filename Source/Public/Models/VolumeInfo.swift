@@ -5,7 +5,7 @@
 //  Created by Ruben Nine on 20/09/2019.
 //  Copyright © 2019 9Labs. All rights reserved.
 //
-
+#if os(macOS)
 import Foundation
 
 /// This struct holds volume, mute, and playthru information about a given channel and direction of an `AudioDevice`.
@@ -40,3 +40,4 @@ public struct VolumeInfo {
         isPlayThruSet = false
     }
 }
+#endif
