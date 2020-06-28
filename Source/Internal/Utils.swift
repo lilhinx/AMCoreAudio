@@ -5,7 +5,7 @@
 //  Created by Ruben Nine on 13/04/16.
 //  Copyright © 2016 9Labs. All rights reserved.
 //
-
+#if os(macOS)
 import CoreAudio.AudioHardwareBase
 import Foundation
 
@@ -36,3 +36,4 @@ func direction(to scope: AudioObjectPropertyScope) -> Direction? {
         return nil
     }
 }
+#endif

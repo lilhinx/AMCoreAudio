@@ -5,7 +5,7 @@
 //  Created by Ruben on 7/9/15.
 //  Copyright © 2015 9Labs. All rights reserved.
 //
-
+#if os(macOS)
 import CoreAudio.AudioHardwareBase
 import Foundation
 
@@ -155,3 +155,4 @@ public final class AudioHardware {
         isRegisteredForNotifications = noErr != err
     }
 }
+#endif

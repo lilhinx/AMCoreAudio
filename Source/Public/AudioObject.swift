@@ -5,7 +5,7 @@
 //  Created by Ruben Nine on 13/04/16.
 //  Copyright © 2016 9Labs. All rights reserved.
 //
-
+#if os(macOS)
 import CoreAudio.AudioHardwareBase
 import Foundation
 
@@ -101,3 +101,4 @@ extension AudioObject: Hashable {
 public func == (lhs: AudioObject, rhs: AudioObject) -> Bool {
     return lhs.hashValue == rhs.hashValue
 }
+#endif

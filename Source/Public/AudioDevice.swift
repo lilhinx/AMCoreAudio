@@ -5,7 +5,7 @@
 //  Created by Ruben on 7/7/15.
 //  Copyright © 2015 9Labs. All rights reserved.
 //
-
+#if os(macOS)
 import AudioToolbox.AudioServices
 import Foundation
 
@@ -1408,3 +1408,4 @@ extension AudioDevice: CustomStringConvertible {
         return "\(name) (\(id))"
     }
 }
+#endif
